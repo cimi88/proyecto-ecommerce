@@ -1,0 +1,56 @@
+.detalle-page {
+  @apply bg-teal-950 min-h-screen flex items-center justify-center p-6;
+}
+
+.detalle-card {
+  @apply max-w-4xl w-full flex flex-col md:flex-row bg-[#161616] border border-teal-700 shadow-lg overflow-hidden;
+}
+
+.detalle-img-container {
+  @apply flex-1 p-4 relative overflow-hidden;
+}
+
+.detalle-img {
+  @apply w-full h-64 object-cover rounded-lg transition-transform duration-300;
+  transition: transform 0.3s ease;
+}
+
+/* Hover efecto oscuro + blur */
+.detalle-img-container:hover .detalle-img {
+  transform: scale(1.03);
+}
+
+.detalle-info {
+  @apply flex-1 p-6 flex flex-col justify-between;
+}
+
+.detalle-title {
+  @apply text-2xl font-bold text-white mb-4;
+}
+
+.detalle-descripcion {
+  @apply text-gray-300 mb-4;
+}
+
+.detalle-precio {
+  @apply text-teal-400 font-bold text-xl;
+}
+
+.detalle-botones {
+  @apply mt-6 flex flex-col gap-4;
+}
+.detalle-botones > * {
+  @apply w-full; /* Hace que cada fila ocupe todo el ancho del contenedor */
+}
+
+.boton-agregar {
+  @apply flex-1 transition flex items-center justify-center gap-2;
+}
+
+.boton-volver {
+  @apply flex-1 w-full;
+}
+
+.detalle-vacio {
+  @apply flex flex-col items-center gap-4 mt-20 text-gray-200;
+}
